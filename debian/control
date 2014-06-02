@@ -1,0 +1,45 @@
+Source: linux-meta-osvx
+Section: devel
+Priority: optional
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Standards-Version: 3.6.1
+Build-Depends: dpkg (>= 1.13.19), debhelper (>= 5), gawk
+Vcs-Git: http://kernel.ubuntu.com/git-repos/ubuntu/ubuntu-saucy-meta.git
+
+Package: linux-headers-osvx
+Architecture: i386 amd64
+Section: devel
+Priority: optional
+Depends: ${misc:Depends}, linux-headers-${kernel-abi-version}-osvx
+Description: OS/VX Linux kernel headers
+ This package will always depend on the latest OS/VX kernel headers
+ available.
+
+Package: linux-image-osvx
+Architecture: i386 amd64
+Section: kernel
+Priority: optional
+Depends: ${misc:Depends}, linux-image-${kernel-abi-version}-osvx, linux-firmware
+Description: OS/VX Linux kernel image
+ This package will always depend on the latest OS/VX kernel image
+ available.
+
+Package: linux-tools-osvx
+Architecture: i386 amd64
+Section: kernel
+Priority: optional
+Provides: linux-tools
+Depends: ${misc:Depends}, linux-tools-${kernel-abi-version}-osvx
+Description: OS/VX Linux kernel tools
+ This package will always depend on the latest OS/VX kernel tools
+ available.
+
+Package: linux-osvx
+Architecture: i386 amd64
+Section: kernel
+Priority: optional
+Depends: ${misc:Depends}, linux-image-osvx (= ${binary:Version}), linux-headers-osvx (= ${binary:Version})
+Description: Complete OS/VX Linux kernel
+ This package will always depend on the latest complete OS/VX Linux kernel
+ available.
+
