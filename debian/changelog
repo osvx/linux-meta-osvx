@@ -1,3 +1,9 @@
+linux-meta-osvx (3.13.0.29.01+osvx1+projectx1) trusty; urgency=medium
+
+  * Switch to OS/VX
+
+ -- Valentin Yakovenkov <yakovenkov@gmail.com>  Mon, 02 Jun 2014 10:41:31 +0400
+
 linux-meta-osvx (3.13.0.29.01) trusty; urgency=low
 
   * linux ABI 3.13.0-29
