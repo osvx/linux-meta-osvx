@@ -1,0 +1,15 @@
+*~
+debian/files
+debian/linux-headers-osvx.debhelper.log
+debian/linux-headers-osvx.substvars
+debian/linux-headers-osvx/
+debian/linux-image-osvx.debhelper.log
+debian/linux-image-osvx.substvars
+debian/linux-image-osvx/
+debian/linux-osvx.debhelper.log
+debian/linux-osvx.substvars
+debian/linux-osvx/
+debian/linux-tools-osvx.debhelper.log
+debian/linux-tools-osvx.substvars
+debian/linux-tools-osvx/
+
